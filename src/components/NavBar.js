@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react"
 import {Navbar, Nav, Container} from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
-import { Link } from 'react-router-dom';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+// import { HashLink } from 'react-router-hash-link';
+import { Link,
+    BrowserRouter as Router
+} from "react-router-dom";
+console.log('Hello World');
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-
+    console.log('Hello World');
     // This is a React Hook that adds a scroll event listener to the window object. It sets a state value "scrolled"
     // to either "true" or "false" depending on the current vertical scroll position of the window. If the window's vertical
     //  scroll position is greater than 50, the state value "scrolled" will be set to "true", otherwise it will be set to "false".
@@ -48,10 +52,11 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     },[])
 
-        const onUpdateActiveLink = (value) => {
-            setActiveLink(value);
+    const onUpdateActiveLink = (value) => {
+        setActiveLink(value);
         }
     return (
+        <Router>
             <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="/">
@@ -72,12 +77,13 @@ export const NavBar = () => {
                         <Link to="#"><img src={navIcon2} alt="" /></Link>
                         <Link to="#"><img src={navIcon3} alt="" /></Link>
                     </div>
-                    <Link to='#connect'>
+                    {/* <HashLink to='#connect'> */}
                         <button className="vvd"><span>Let’s Connect</span></button>
-                    </Link>
+                        {/* </HashLink> */}
                 </span>
                 </Navbar.Collapse>
             </Container>
             </Navbar>
+        </Router>
     )
 }
