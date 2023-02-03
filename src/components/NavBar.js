@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react"
 import {Navbar, Nav, Container} from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-con1.svg';
-import navIcon2 from '../assets/img/nav-con2.svg';
-import navIcon3 from '../assets/img/nav-con3.svg';
+import { Link } from 'react-router-dom';
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -67,13 +68,13 @@ export const NavBar = () => {
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt="" /></a>
-                    <a href="#"><img src={navIcon2} alt="" /></a>
-                    <a href="#"><img src={navIcon3} alt="" /></a>
+                        <Link to="#"><img src={navIcon1} alt="" /></Link>
+                        <Link to="#"><img src={navIcon2} alt="" /></Link>
+                        <Link to="#"><img src={navIcon3} alt="" /></Link>
                     </div>
-                    {/* <HashLink to='#connect'> */}
-                    <button className="vvd"><span>Let’s Connect</span></button>
-                    {/* </HashLink> */}
+                    <Link to='#connect'>
+                        <button className="vvd"><span>Let’s Connect</span></button>
+                    </Link>
                 </span>
                 </Navbar.Collapse>
             </Container>
