@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 // import { HashLink } from 'react-router-hash-link';
 import { Link,
     BrowserRouter as Router
@@ -73,9 +74,10 @@ export const NavBar = () => {
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <Link to="#"><img src={navIcon1} alt="" /></Link>
+                        <Link to="https://www.linkedin.com/in/davidjeanbaptiste/"><img src={navIcon1} alt="" /></Link>
                         <Link to="#"><img src={navIcon2} alt="" /></Link>
-                        <Link to="#"><img src={navIcon3} alt="" /></Link>
+                        <Link to="https://www.instagram.com/david.jean.baptiste/"><img src={navIcon3} alt="" /></Link>
+                        <Link to="https://www.instagram.com/david.jean.baptiste/"><img src={navIcon4} alt="" /></Link>
                     </div>
                     {/* <HashLink to='#connect'> */}
                         <button className="vvd"><span>Let’s Connect</span></button>
