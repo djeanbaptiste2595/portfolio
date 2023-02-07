@@ -1,7 +1,9 @@
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
-import python from "../assets/img/python.jpg";
+import python from "../assets/img/py.png";
+import javascript from "../assets/img/js.png";
+import react from "../assets/img/react.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -44,20 +46,32 @@ const responsive = {
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={[python]} alt="Image" />
-                                    <h5>Web Development </h5>
+                                    <h5>Python</h5>
                                 </div>
                                 <div className="item">
+                                    <img src={[javascript]} alt="Image" />
+                                    <h5>javascript</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={[react]} alt="Image" />
+                                    <h5>React</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={[python]} alt="Image" />
+                                    <h5>Python</h5>
+                                </div>
+                                {/* <div className="item">
                                     <img src={meter2} alt="Image" />
                                     <h5>Web Development </h5>
-                                </div>
-                                <div className="item">
+                                </div> */}
+                                {/* <div className="item">
                                     <img src={meter3} alt="Image" />
                                     <h5>Web Development </h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
                                     <h5>Web Development </h5>
-                                </div>
+                                </div> */}
 
                             </Carousel>
                         </div>

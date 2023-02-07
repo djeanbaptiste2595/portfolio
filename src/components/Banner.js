@@ -13,7 +13,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     // delta: the interval at which the text should change
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = ["Full Stack Developer" , "Web Designer", "UI/UX Designer", "Innovator", "Problem Solver", "Proficient Coder", "Agile Developer", "Team Collaborator "  ]
+    const toRotate = ["Full Stack Developer" , "Web Designer", "UI/UX Designer", "Innovator", "Agile Developer", "Team Collaborator "  ]
     const period = 1000;
 
     // useEffect: The useEffect hook sets up a recurring interval that calls the "tick" function every "delta" milliseconds.
