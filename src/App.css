@@ -277,6 +277,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: .80;
+  max-inline-size: 100%;
 }
 .banner .tagline {
   font-weight: 700;
@@ -323,6 +324,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  border-radius: 50%;
+  width: 20em ;
+  height: 20em ;
+
 }
 @keyframes updown {
     0% {
