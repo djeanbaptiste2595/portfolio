@@ -2,6 +2,12 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import python from "../assets/img/py.png";
+import html1 from "../assets/img/html1.png";
+import css from "../assets/img/css.png";
+import post from "../assets/img/post.png";
+import django from "../assets/img/django.png";
+import docker from "../assets/img/docker.png";
+import agile from "../assets/img/agile.png";
 import javascript from "../assets/img/js.png";
 import react from "../assets/img/react.png";
 import Carousel from "react-multi-carousel";
@@ -45,21 +51,42 @@ const responsive = {
                             </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={[python]} alt="Image" />
-                                    <h5>Python</h5>
+                                    <img src={[html1]} alt="Image" />
+                                    <h5>HTML5</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={[css]} alt="Image" />
+                                    <h5>CSS3</h5>
                                 </div>
                                 <div className="item">
                                     <img src={[javascript]} alt="Image" />
-                                    <h5>javascript</h5>
+                                    <h5>JAVASCRIPT</h5>
                                 </div>
-                                <div className="item">
+                                                                <div className="item">
                                     <img src={[react]} alt="Image" />
-                                    <h5>React</h5>
+                                    <h5>REACT</h5>
                                 </div>
                                 <div className="item">
                                     <img src={[python]} alt="Image" />
-                                    <h5>Python</h5>
+                                    <h5>PYTHON</h5>
                                 </div>
+                                <div className="item">
+                                    <img src={[django]} alt="Image" />
+                                    <h5>DJANGO</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={[agile]} alt="Image" />
+                                    <h5>Agile</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={[post]} alt="Image" />
+                                    <h5>PostgresSQL</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={[docker]} alt="Image" />
+                                    <h5>Docker</h5>
+                                </div>
+
                                 {/* <div className="item">
                                     <img src={meter2} alt="Image" />
                                     <h5>Web Development </h5>
@@ -78,6 +105,7 @@ const responsive = {
                     </Col>
                 </Row>
             </Container>
+            <img className="background-image-left" src={colorSharp} alt="img" />
 
 
         </section>

@@ -85,8 +85,21 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Welcome to my Portfolio</span>
-                        <h1>{`"Hi, I'm David!" `}<br></br>{`<`}<span className="wrap">{text}</span >{`/>`}</h1 >
-                        <p> About me</p>
+                        <h1>{`"Hi, I'm David!" `}<br></br>
+                        {`<`}<span className="wrap">{text}</span >{`/>`}</h1 >
+                        <div style = {{color: 'white'}}>
+                            Entering the tech space is like discovering a whole new universe, a world filled with endless
+                            possibilities and opportunities. From the moment I wrote my first line of code, "Hello World!",
+                            I was captivated by the magic of programming. I knew then that I wanted to be a part of this world
+                            and use technology to make a difference. That's why I enrolled in one of the top bootcamps, Hack Reactor.
+                            The 19-week program has not only taught me how to code but has also helped me develop a software
+                            engineer's way of thinking. I am confident that the skills and knowledge I have acquired will be
+                            invaluable in my career as a software engineer. I am eager to continue learning and growing as I
+                            embark on this exciting journey. I hope to work on projects that have a positive impact on people's
+                            lives and connect with others in the tech community. I believe that through collaboration and
+                            sharing ideas, we can create something truly remarkable. I'm excited for this new chapter in
+                            my life and can't wait to see where it will take me.
+                        </div>
                         <button onClick={() => console.log('connect')}> Let's connect<ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
