@@ -13,17 +13,19 @@ export const Projects = () => {
         title: "CarCar",
         description: "User-friendly car dealership application",
         imgUrl: projImg1,
+        link: "#",
         },
         {
         title: "Dimension & Coding",
         description: "Fully Deployed Interactive coding Game",
-
         imgUrl: projImg2,
+        link: "https://ground7rule.gitlab.io/ground-7-rule/",
         },
         {
         title: "Business Startup",
         description: "Design & Development",
         imgUrl: projImg3,
+        link: "#",
         },
 
     ]
@@ -55,6 +57,7 @@ export const Projects = () => {
                                             <ProjectCard
                                             key={index}
                                             {...project}
+                                            onClick={() => window.location.href = project.link}
                                             />
                                             )
                                         })
