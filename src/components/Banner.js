@@ -13,7 +13,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     // delta: the interval at which the text should change
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = ["Web Designer", "UI/UX Designer", "Innovator", "Problem Solver", "Proficient Coder", "Agile Developer", "Team Collaborator "  ]
+    const toRotate = ["Full Stack Developer" , "Web Designer", "UI/UX Designer", "Innovator", "Problem Solver", "Proficient Coder", "Agile Developer", "Team Collaborator "  ]
     const period = 1000;
 
     // useEffect: The useEffect hook sets up a recurring interval that calls the "tick" function every "delta" milliseconds.
@@ -85,7 +85,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm David!  : <`}<span className="wrap">{text}</span >{`/>`}</h1 >
+                        <h1>{`"Hi, I'm David!" `}<br></br>{`<`}<span className="wrap">{text}</span >{`/>`}</h1 >
                         <p> About me</p>
                         <button onClick={() => console.log('connect')}> Let's connect<ArrowRightCircle size={25}/></button>
                     </Col>
