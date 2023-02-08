@@ -13,7 +13,7 @@ export const Projects = () => {
         title: "CarCar",
         description: "User-friendly car dealership application",
         imgUrl: projImg1,
-        link: "#",
+        link: "https://gitlab.com/jlee428/project-beta",
         },
         {
         title: "Dimension & Coding",
