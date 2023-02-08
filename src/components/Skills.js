@@ -47,43 +47,41 @@ const responsive = {
                             <h2>
                                 Skills
                             </h2>
-                            <p> SOmething here. <b></b> Something else
-                            </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={[html1]} alt="Image" />
+                                    <img src={[html1]} alt="img" />
                                     <h5>HTML5</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[css]} alt="Image" />
+                                    <img src={[css]} alt="img" />
                                     <h5>CSS3</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[javascript]} alt="Image" />
+                                    <img src={[javascript]} alt="img" />
                                     <h5>JAVASCRIPT</h5>
                                 </div>
                                                                 <div className="item">
-                                    <img src={[react]} alt="Image" />
+                                    <img src={[react]} alt="img" />
                                     <h5>REACT</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[python]} alt="Image" />
+                                    <img src={[python]} alt="img" />
                                     <h5>PYTHON</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[django]} alt="Image" />
+                                    <img src={[django]} alt="img" />
                                     <h5>DJANGO</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[agile]} alt="Image" />
+                                    <img src={[agile]} alt="img" />
                                     <h5>Agile</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[post]} alt="Image" />
+                                    <img src={[post]} alt="img" />
                                     <h5>PostgresSQL</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={[docker]} alt="Image" />
+                                    <img src={[docker]} alt="img" />
                                     <h5>Docker</h5>
                                 </div>
 
