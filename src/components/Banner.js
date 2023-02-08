@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.png"
+
+
+
 
 export const Banner = () => {
     // State variables: The component sets up 4 state variables using the useState hook.
@@ -100,7 +103,11 @@ export const Banner = () => {
                             sharing ideas, we can create something truly remarkable. I'm excited for this new chapter in
                             my life and can't wait to see where it will take me.
                         </div>
-                        <button onClick={() => console.log('connect')}> Let's connect<ArrowRightCircle size={25}/></button>
+                        <button onClick={() => {
+                        document.querySelector('#connect').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        }}> Let's connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"  />

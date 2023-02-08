@@ -74,15 +74,15 @@ const responsive = {
                                 </div>
                                 <div className="item">
                                     <img src={[agile]} alt="img" />
-                                    <h5>Agile</h5>
+                                    <h5>AGILE</h5>
                                 </div>
                                 <div className="item">
                                     <img src={[post]} alt="img" />
-                                    <h5>PostgresSQL</h5>
+                                    <h5>POSTGRESSQL</h5>
                                 </div>
                                 <div className="item">
                                     <img src={[docker]} alt="img" />
-                                    <h5>Docker</h5>
+                                    <h5>DOCKER</h5>
                                 </div>
 
                                 {/* <div className="item">

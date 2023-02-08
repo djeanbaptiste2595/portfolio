@@ -6,16 +6,16 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/nav-icon4.svg';
-// import { HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import { Link,
     BrowserRouter as Router
 } from "react-router-dom";
-console.log('Hello World');
+
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
-    console.log('Hello World');
+
     // This is a React Hook that adds a scroll event listener to the window object. It sets a state value "scrolled"
     // to either "true" or "false" depending on the current vertical scroll position of the window. If the window's vertical
     //  scroll position is greater than 50, the state value "scrolled" will be set to "true", otherwise it will be set to "false".
@@ -79,9 +79,9 @@ export const NavBar = () => {
                         <Link to="https://www.instagram.com/david.jean.baptiste/"><img src={navIcon3} alt="" /></Link>
                         <Link to="https://gitlab.com/djeanbaptiste2595"><img src={navIcon4} alt="" /></Link>
                     </div>
-                    {/* <HashLink to='#connect'> */}
+                    <HashLink to='#connect'>
                         <button className="vvd"><span>Let’s Connect</span></button>
-                        {/* </HashLink> */}
+                        </HashLink>
                 </span>
                 </Navbar.Collapse>
             </Container>
