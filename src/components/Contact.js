@@ -45,7 +45,7 @@ export const Contact = () => {
   };
 
   return (
-    <div class="tiledBackground">
+    <div className="tiledBackground">
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
