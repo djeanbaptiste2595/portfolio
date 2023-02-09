@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/astro.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
+console.log("hello")
 export const Contact = () => {
   const formInitialDetails = {
     firstName: '',
